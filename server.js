@@ -18,7 +18,7 @@ var path = require('path'),
     // find latest tweet according the query 'q' in params
     var retweet = function() {
         var params = {
-            q: '#iamababy',  // REQUIRED
+            q: '#imababy OR #iamababy',  // REQUIRED
             result_type: 'recent',
             lang: 'en'
         }
@@ -51,7 +51,7 @@ var path = require('path'),
     
 retweet();
 
-setInterval(retweet, 300000000);
+setInterval(retweet, 3000000);
 
 /**********************************************************************************************/
 /* The code below takes care of serving the index.html file, no need to change anything here. */
